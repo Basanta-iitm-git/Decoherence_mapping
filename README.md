@@ -36,7 +36,7 @@ $\frac{1}{T_2(B)} \approx \frac{1}{T_{2'}} + \sqrt{\left( \frac{df}{dB} \sigma_B
 
 where, $f$ is the transition frequency, $\sigma_B$ is the standard deviation of the external field noise (assuming the normal distribution), and $T_{2'}$ is related to the decoherence mechanisms due to the non-magnetic noise. 
 
-The functions required for evaluating gradients and curvatures are presented in *decoherence_mapping_functions.py*. **Qutip** and **Numpy** are the main libraries which have been used in the script.
+The functions required for evaluating gradients and curvatures are presented in ![*decoherence_mapping_functions.py*](http://url/img.png). **Qutip** and **Numpy** are the main libraries which have been used in the script.
 
 # Parameters:
 
