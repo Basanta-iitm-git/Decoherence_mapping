@@ -17,6 +17,7 @@ The code is design to accommodate following interactions:
 - Electron-Nuclear Hyperfine
 
 The generic Hamiltonian would look something like this:
+
 $H = D\left(S_z^2-\frac{2}{3}\right) + \gamma_e  \vec{B}.\vec{S} + \vec{S}.\vec{A}.\vec{I} +  \gamma_{n} \vec{B}.\vec{I} + \vec{I}.\vec{Q}.\vec{I}$
 
 Here, $\vec{S}$, $\vec{I}$ are electron and nuclear spin operators, respectively. D is the zero field splitting term, $\epsilon$ is the strain term, $\gamma_e$, $\gamma_n$ are the electron and nuclear gyromagnetic ratio, $\vec{A}$ is the hyperfine interaction tensor, $\vec{Q}$ is the quadrupole interaction tensor.
@@ -25,6 +26,19 @@ Here, $\vec{S}$, $\vec{I}$ are electron and nuclear spin operators, respectively
 
 The electronic and nuclear parameters required for Hamiltonian diagonalization are provided in this file. The current set of parameters allows for calculations pertaining to the two defect systems: 
 
-- 
+- Negatively charged **Nitrogen Vacancy Centers in Diamond** interacting with the host nuclear spin ($^{14}N$, $^{15}N$) and the nuclear spins in the bath ($^{13}C$)
+- Negatively charged **Boron Vacancy Centers in Hexagonal Boron Nitride** interacting with the nearest $^{14}N$ nuclear spins
+
+In case the user wishes to work with another material system, the parameters in the file can be easily updated.
+
+# Methodology:
+
+Assuming that $T_2(B)$ is inversely proportional to the frequency broadening caused by the magnetic field perturbations, its dependence on energy gradients and curvatures can be expressed as: 
+
+$\frac{1}{T_2(B)} \approx \frac{1}{T_{2'}} + \sqrt{\left( \frac{df}{dB} \sigma_B \right)^2 + \frac{1}{2}\left( \frac{d^2f}{dB^2} \sigma_B^2 \right)^2}$
+
+where, $f$ is the transition frequency, $\sigma_B$ is the standard deviation of the external field noise (assuming the normal distribution), and $T_{2'}$ is related to the decoherence mechanisms due to the non-magnetic noise. 
+
+The functions required for evaluating gradients and curvatures are presented in this file.
 
 
