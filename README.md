@@ -1,3 +1,8 @@
+# Reference:
+
+The repository is based on the work presented in the following manuscript:
+
+
 # Objective: 
 The objective of this repository is to explore decoherence free subspaces in varied spin defect systems. The code performs following tasks:
 
@@ -24,7 +29,7 @@ Here, $\vec{S}$, $\vec{I}$ are electron and nuclear spin operators, respectively
 
 # Parameters:
 
-The electronic and nuclear parameters required for Hamiltonian diagonalization are provided in this file. The current set of parameters allows for calculations pertaining to the two defect systems: 
+The electronic and nuclear parameters required for Hamiltonian diagonalization are provided in *decoherence_mapping_parameters.py*. The current set of parameters allows for calculations pertaining to the two defect systems: 
 
 - Negatively charged **Nitrogen Vacancy Centers in Diamond** interacting with the host nuclear spin ($^{14}N$, $^{15}N$) and the nuclear spins in the bath ($^{13}C$)
 - Negatively charged **Boron Vacancy Centers in Hexagonal Boron Nitride** interacting with the nearest $^{14}N$ nuclear spins
@@ -39,6 +44,8 @@ $\frac{1}{T_2(B)} \approx \frac{1}{T_{2'}} + \sqrt{\left( \frac{df}{dB} \sigma_B
 
 where, $f$ is the transition frequency, $\sigma_B$ is the standard deviation of the external field noise (assuming the normal distribution), and $T_{2'}$ is related to the decoherence mechanisms due to the non-magnetic noise. 
 
-The functions required for evaluating gradients and curvatures are presented in this file.
+The functions required for evaluating gradients and curvatures are presented in *decoherence_mapping_functions.py*.
 
+# Visualization:
 
+Plotly based visualization example has been provided in *decoherence_mapping_example.ipynb*. The example consider a negatively charged boron vacancy center in hexagonal boron nitride interacting with three nearest $^{14}N$ nuclear spins
