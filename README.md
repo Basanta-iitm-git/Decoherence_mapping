@@ -38,11 +38,11 @@ $\frac{1}{T_2(B)} \approx \frac{1}{T_{2'}} + \sqrt{\left( \frac{df}{dB} \sigma_B
 
 where, $f$ is the transition frequency, $\sigma_B$ is the standard deviation of the external field noise (assuming the normal distribution), and $T_{2'}$ is related to the decoherence mechanisms due to the non-magnetic noise. 
 
-The functions required for evaluating gradients and curvatures are presented in [decoherence_mapping_functions.py](decoherence_mapping_functions.ipynb). **Qutip** and **Numpy** are the main libraries which have been used in the script.
+The functions required for evaluating gradients and curvatures are presented in [decoherence_mapping_functions.py](decoherence_mapping_functions.py). **Qutip** and **Numpy** are the main libraries which have been used in the script.
 
 # Parameters:
 
-The electronic and nuclear parameters required for Hamiltonian diagonalization are provided in [decoherence_mapping_parameters.py](https://github.com/Basanta-iitm-git/Decoherence_mapping/blob/main/decoherence_mapping_parameters.ipynb). The current set of parameters allows for calculations pertaining to the two defect systems: 
+The electronic and nuclear parameters required for Hamiltonian diagonalization are provided in [decoherence_mapping_parameters.py](https://github.com/Basanta-iitm-git/Decoherence_mapping/blob/main/decoherence_mapping_parameters.py). The current set of parameters allows for calculations pertaining to the two defect systems: 
 
 - Negatively charged **Nitrogen Vacancy Centers in Diamond** interacting with the host nuclear spin $\left( ^{14}N, ^{15}N \right)$ and the nuclear spins in the bath $\left(^{13}C\right)$
 - Negatively charged **Boron Vacancy Centers in Hexagonal Boron Nitride** interacting with the nearest $^{14}N$ nuclear spins
@@ -51,4 +51,4 @@ In case the user wishes to work with another material system, the parameters in 
 
 # Visualization:
 
-Plotly based visualization example has been provided in [decoherence_mapping_example.py](https://github.com/Basanta-iitm-git/Decoherence_mapping/blob/main/decoherence_mapping_example.ipynb). The example consider a negatively charged boron vacancy center in hexagonal boron nitride interacting with three nearest $^{14}N$ nuclear spins
+Plotly based visualization example has been provided in [decoherence_mapping_example.ipynb](https://github.com/Basanta-iitm-git/Decoherence_mapping/blob/main/decoherence_mapping_example.ipynb). The example consider a negatively charged boron vacancy center in hexagonal boron nitride interacting with three nearest $^{14}N$ nuclear spins
