@@ -7,25 +7,6 @@ from plotly import graph_objs as go
 from plotly.subplots import make_subplots
 from decoherence_mapping_parameters import nuclear, electronic
 
-def create_spin_system(center_type, *nuclei_types):
-    """
-    Create a central spin system and multiple nuclear spin systems
-    
-    Args:
-        center_type: String identifier for central spin (e.g., 'VB-')
-        nuclei_types: Variable number of nuclear spin identifiers (e.g., '14N')
-    
-    Returns:
-        Tuple containing (electron_system, [nuclear_systems])
-    """
-    # Central spin system
-    electron = electronic(center_type)
-    
-    # Nuclear spin systems
-    nuclei = [nuclear(n_type) for n_type in nuclei_types]
-    
-    return electron, nuclei
-
 def generalized_operators(electron, nuclei):
     """
     Generate spin operators for composite system using tensor products
@@ -190,8 +171,8 @@ def curvature_transition_energy(system, B_arr, neighbour_arr, generalized_hamilt
             gradient1[:,k,l] = (np.sqrt(df_dBx_1**2 + df_dBy_1**2 + df_dBz_1**2))
             gradient2[:,k,l] = (np.sqrt(df_dBx_2**2 + df_dBy_2**2 + df_dBz_2**2))
             gradient3[:,k,l] = (np.sqrt(df_dBx_3**2 + df_dBy_3**2 + df_dBz_3**2))
-            curvature1[:,k,l] = numerator1 / denominator1
-            curvature2[:,k,l] = numerator2 / denominator2
-            curvature3[:,k,l] = numerator3 / denominator3
+            curvature1[:,k,l] = np.abs(numerator1 / denominator1)
+            curvature2[:,k,l] = np.abs(numerator2 / denominator2)
+            curvature3[:,k,l] = np.abs(numerator3 / denominator3)
 
     return Trans_Eng_1,gradient1,curvature1,Trans_Eng_2,gradient2,curvature2,Trans_Eng_3,gradient3,curvature3

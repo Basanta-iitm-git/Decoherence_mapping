@@ -5,7 +5,7 @@ class nuclear:
     def __init__(self, name):
         self.name = name
         
-        if self.name == '14N':
+        if self.name == 'NV_14N':
             self.A_perp = 2.7
             self.A_par = 2.14  # MHz
             self.Q = 5.01      # MHz
@@ -15,7 +15,7 @@ class nuclear:
             self.Ix = jmat(3,'x')
             self.dimension = 7
 
-        elif self.name == '14N11':
+        elif self.name == 'VB_14N1':
             self.A_xx = 46.944
             self.A_yy = 90.025
             self.A_zz = 48.158
@@ -30,7 +30,7 @@ class nuclear:
             self.Ix = jmat(1,'x')
             self.dimension = 3
 
-        elif self.name == '14N12':
+        elif self.name == 'VB_14N2':
             self.A_xx = 79.406
             self.A_yy = 58.170
             self.A_zz = 48.159
@@ -45,7 +45,7 @@ class nuclear:
             self.Ix = jmat(1,'x')
             self.dimension = 3
 
-        elif self.name == '14N13':
+        elif self.name == 'VB_14N3':
             self.A_xx = 79.406
             self.A_yy = 58.170
             self.A_zz = 48.159
@@ -60,7 +60,7 @@ class nuclear:
             self.Ix = jmat(1,'x')
             self.dimension = 3
 
-        elif self.name == '15N':
+        elif self.name == 'NV_15N':
             self.A_perp = 3.65
             self.A_par = 3.03
             self.Q = 0
@@ -70,7 +70,7 @@ class nuclear:
             self.Ix = jmat(1/2,'x')
             self.dimension = 2
 
-        elif self.name == '13C':
+        elif self.name == 'NV_13C':
             self.A_perp = 0.5
             self.A_par = 0.5
             self.Q = 0
