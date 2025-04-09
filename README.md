@@ -42,7 +42,7 @@ The functions required for evaluating gradients and curvatures are presented in 
 
 The electronic and nuclear parameters required for Hamiltonian diagonalization are provided in *decoherence_mapping_parameters.py*. The current set of parameters allows for calculations pertaining to the two defect systems: 
 
-- Negatively charged **Nitrogen Vacancy Centers in Diamond** interacting with the host nuclear spin ($^{14}N$, $^{15}N$) and the nuclear spins in the bath ($^{13}C$)
+- Negatively charged **Nitrogen Vacancy Centers in Diamond** interacting with the host nuclear spin $\left( ^{14}N, ^{15}N \right)$ and the nuclear spins in the bath $\left(^{13}C\right)$
 - Negatively charged **Boron Vacancy Centers in Hexagonal Boron Nitride** interacting with the nearest $^{14}N$ nuclear spins
 
 In case the user wishes to work with another material system, the parameters in the file can be easily updated.
