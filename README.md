@@ -1,6 +1,6 @@
 # Reference:
 
-![Figure](https://github.com/Basanta-iitm-git/Decoherence_mapping/blob/main/decoherence_mapping_functions.ipynb?raw=true)
+![Figure](https://github.com/Basanta-iitm-git/Decoherence_mapping/blob/main/kk_NcVsi_eng_prob_grad_curv.png?raw=true)
 
 The repository is based on the work presented in the following manuscript:
 
