@@ -10,7 +10,6 @@ The repository is based on the work presented in the following manuscript:
 The objective of this repository is to explore decoherence free subspaces in varied spin defect systems. The code performs following tasks:
 
 - **Hamiltonian Diagonalization**
-- Calculation of **Oscillator Strengths** pertaining to all posible transitions
 - Evaluation of **Gradient**, and **Curvature** associated with various transition energies as a function of applied magnetic field with an arbitrary orientation.
 - **3D Visualization** of the computed parameters
 
@@ -51,4 +50,4 @@ In case the user wishes to work with another material system, the parameters in 
 
 # Visualization:
 
-Plotly based visualization example has been provided in [decoherence_mapping_example.ipynb](https://github.com/Basanta-iitm-git/Decoherence_mapping/blob/main/decoherence_mapping_example.ipynb). The example consider a negatively charged boron vacancy center in hexagonal boron nitride interacting with three nearest $^{14}N$ nuclear spins
+Plotly based visualization example has been provided in [decoherence_mapping_example.ipynb](https://github.com/Basanta-iitm-git/Decoherence_mapping/blob/main/decoherence_mapping_example.ipynb). The example consider a negatively charged boron vacancy center in hexagonal boron nitride interacting with three nearest $^{14}N$ nuclear spins.
