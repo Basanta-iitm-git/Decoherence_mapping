@@ -26,7 +26,7 @@ The generic Hamiltonian would look something like this:
 
 $H = D\left(S_z^2-\frac{2}{3}\right) + \gamma_e  \vec{B}.\vec{S} + \vec{S}.\vec{A}.\vec{I} +  \gamma_{n} \vec{B}.\vec{I} + \vec{I}.\vec{Q}.\vec{I}$
 
-Here, $\vec{S}$, $\vec{I}$ are electron and nuclear spin operators, respectively. D is the zero field splitting term, $\epsilon$ is the strain term, $\gamma_e$, $\gamma_n$ are the electron and nuclear gyromagnetic ratio, $\vec{A}$ is the hyperfine interaction tensor, $\vec{Q}$ is the quadrupole interaction tensor.
+Here, $\vec{S}$, $\vec{I}$ are electron and nuclear spin operators, respectively. D is the zero field splitting term, $\gamma_e$, $\gamma_n$ are the electron and nuclear gyromagnetic ratio, $\vec{A}$ is the hyperfine interaction tensor, $\vec{Q}$ is the quadrupole interaction tensor.
 
 # Methodology:
 
