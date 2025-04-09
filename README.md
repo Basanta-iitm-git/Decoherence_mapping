@@ -2,7 +2,7 @@
 
 The repository is based on the work presented in the following manuscript:
 
-Basanta Mistri, Saksham Mahajan, John J. L. Morton, Rama K. Kamineni, and Siddharth Dhomkar, *Modeling effect of magnetic field orientation on the decoherence properties of boron vacancies in hexagonal boron nitride*
+*Modeling effect of magnetic field orientation on the decoherence properties of boron vacancies in hexagonal boron nitride* - Basanta Mistri, Saksham Mahajan, John J. L. Morton, Rama K. Kamineni, and Siddharth Dhomkar, 
 
 # Objective: 
 The objective of this repository is to explore decoherence free subspaces in varied spin defect systems. The code performs following tasks:
