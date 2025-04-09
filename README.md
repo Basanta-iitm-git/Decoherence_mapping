@@ -1,5 +1,7 @@
 # Reference:
 
+![Figure](https://github.com/Basanta-iitm-git/Decoherence_mapping/blob/main/decoherence_mapping_functions.ipynb?raw=true)
+
 The repository is based on the work presented in the following manuscript:
 
 *Modeling effect of magnetic field orientation on the decoherence properties of boron vacancies in hexagonal boron nitride* - Basanta Mistri, Saksham Mahajan, John J. L. Morton, Rama K. Kamineni, and Siddharth Dhomkar 
