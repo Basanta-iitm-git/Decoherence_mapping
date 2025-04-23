@@ -33,7 +33,7 @@ Here, $\vec{S}$, $\vec{I}$ are electron and nuclear spin operators, respectively
 
 Assuming that $T_2(B)$ is inversely proportional to the frequency broadening caused by the magnetic field perturbations, its dependence on energy gradients and curvatures can be expressed as: 
 
-$\frac{1}{T_2(B)} \approx \frac{1}{T_{2'}} + \sqrt{\left( \frac{df}{dB} \sigma_B \right)^2 + \frac{1}{2}\left( \frac{d^2f}{dB^2} \sigma_B^2 \right)^2}$
+$\frac{1}{T_2(B)} \approx \sqrt{\left( \frac{df}{dB} \sigma_B \right)^2 + \frac{1}{2}\left( \frac{d^2f}{dB^2} \sigma_B^2 \right)^2}$
 
 where, $f$ is the transition frequency, $\sigma_B$ is the standard deviation of the external field noise (assuming the normal distribution), and $T_{2'}$ is related to the decoherence mechanisms due to the non-magnetic noise. 
 
