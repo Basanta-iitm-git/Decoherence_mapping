@@ -6,86 +6,174 @@ class nuclear:
         self.name = name
         
         if self.name == 'NV_14N':
-            self.A_perp = 2.7
-            self.A_par = 2.14  # MHz
-            self.Q = 5.01      # MHz
+            self.A_xx = 2.7    # MHz
+            self.A_yy = 2.7    # MHz
+            self.A_zz = 2.14   # MHz
+            self.A_xy = 0      # MHz
+            self.A_yx = 0      # MHz
+            self.A_xz = 0      # MHz
+            self.A_zx = 0      # MHz
+            self.A_yz = 0      # MHz
+            self.A_zy = 0      # MHz
+            self.Q_xx = 0      # MHz
+            self.Q_yy = 0      # MHz
+            self.Q_zz = 0      # MHz
+            self.Q_xy = 0      # MHz
+            self.Q_yx = 0      # MHz
+            self.Q_xz = 0      # MHz
+            self.Q_zx = 0      # MHz
+            self.Q_yz = 0      # MHz
+            self.Q_zy = 0      # MHz
             self.g = 3.0766    # MHz/T
             self.Iz = jmat(3,'z')
             self.Iy = jmat(3,'y')
             self.Ix = jmat(3,'x')
             self.dimension = 7
-
-        elif self.name == 'VB_14N1':
-            self.A_xx = 46.944
-            self.A_yy = 90.025
-            self.A_zz = 48.158
-            self.A_xy = 0.00
-            self.Q_xx = -0.46
-            self.Q_yy = 0.98
-            self.Q_zz = -0.52
-            self.Q_xy = 0.00
-            self.g = 3.0766
-            self.Iz = jmat(1,'z')
-            self.Iy = jmat(1,'y')
-            self.Ix = jmat(1,'x')
-            self.dimension = 3
-
-        elif self.name == 'VB_14N2':
-            self.A_xx = 79.406
-            self.A_yy = 58.170
-            self.A_zz = 48.159
-            self.A_xy = -18.391
-            self.Q_xx = 0.62
-            self.Q_yy = -0.1
-            self.Q_zz = -0.52
-            self.Q_xy = -0.623
-            self.g = 3.0766
-            self.Iz = jmat(1,'z')
-            self.Iy = jmat(1,'y')
-            self.Ix = jmat(1,'x')
-            self.dimension = 3
-
-        elif self.name == 'VB_14N3':
-            self.A_xx = 79.406
-            self.A_yy = 58.170
-            self.A_zz = 48.159
-            self.A_xy = 18.391
-            self.Q_xx = 0.62
-            self.Q_yy = -0.1
-            self.Q_zz = -0.52
-            self.Q_xy = 0.623
-            self.g = 3.0766
-            self.Iz = jmat(1,'z')
-            self.Iy = jmat(1,'y')
-            self.Ix = jmat(1,'x')
-            self.dimension = 3
-
+        
         elif self.name == 'NV_15N':
-            self.A_perp = 3.65
-            self.A_par = 3.03
-            self.Q = 0
-            self.g = 4.3156
+            self.A_xx = 3.65   # MHz
+            self.A_yy = 3.65   # MHz
+            self.A_zz = 3.03   # MHz
+            self.A_xy = 0      # MHz
+            self.A_yx = 0      # MHz
+            self.A_xz = 0      # MHz
+            self.A_zx = 0      # MHz
+            self.A_yz = 0      # MHz
+            self.A_zy = 0      # MHz
+            self.Q_xx = 0      # MHz
+            self.Q_yy = 0      # MHz
+            self.Q_zz = 0      # MHz
+            self.Q_xy = 0      # MHz
+            self.Q_yx = 0      # MHz
+            self.Q_xz = 0      # MHz
+            self.Q_zx = 0      # MHz
+            self.Q_yz = 0      # MHz
+            self.Q_zy = 0      # MHz
+            self.g = 4.3156    # MHz/T
             self.Iz = jmat(1/2,'z')
             self.Iy = jmat(1/2,'y')
             self.Ix = jmat(1/2,'x')
             self.dimension = 2
 
         elif self.name == 'NV_13C':
-            self.A_perp = 0.5
-            self.A_par = 0.5
-            self.Q = 0
-            self.g = 10.7084
+            self.A_xx = 0.5    # MHz
+            self.A_yy = 0.5    # MHz
+            self.A_zz = 0.5    # MHz
+            self.A_xy = 0      # MHz
+            self.A_yx = 0      # MHz
+            self.A_xz = 0      # MHz
+            self.A_zx = 0      # MHz
+            self.A_yz = 0      # MHz
+            self.A_zy = 0      # MHz
+            self.Q_xx = 0      # MHz
+            self.Q_yy = 0      # MHz
+            self.Q_zz = 0      # MHz
+            self.Q_xy = 0      # MHz
+            self.Q_yx = 0      # MHz
+            self.Q_xz = 0      # MHz
+            self.Q_zx = 0      # MHz
+            self.Q_yz = 0      # MHz
+            self.Q_zy = 0      # MHz
+            self.g = 10.7084   # MHz/T
             self.Iz = jmat(1/2,'z')
             self.Iy = jmat(1/2,'y')
             self.Ix = jmat(1/2,'x')
             self.dimension = 2
 
+        elif self.name == 'VB_14N1':
+            self.A_xx = 46.944   # MHz
+            self.A_yy = 90.025   # MHz
+            self.A_zz = 48.158   # MHz
+            self.A_xy = 0        # MHz
+            self.A_yx = 0        # MHz
+            self.A_xz = 0        # MHz
+            self.A_zx = 0        # MHz
+            self.A_yz = 0        # MHz
+            self.A_zy = 0        # MHz
+            self.Q_xx = -0.46    # MHz
+            self.Q_yy = 0.98     # MHz
+            self.Q_zz = -0.52    # MHz
+            self.Q_xy = 0        # MHz
+            self.Q_yx = 0        # MHz
+            self.Q_xz = 0        # MHz
+            self.Q_zx = 0        # MHz
+            self.Q_yz = 0        # MHz
+            self.Q_zy = 0        # MHz
+            self.g = 3.0766      # MHz/T
+            self.Iz = jmat(1,'z')
+            self.Iy = jmat(1,'y')
+            self.Ix = jmat(1,'x')
+            self.dimension = 3
+
+        elif self.name == 'VB_14N2':
+            self.A_xx = 79.406   # MHz
+            self.A_yy = 58.170   # MHz
+            self.A_zz = 48.159   # MHz
+            self.A_xy = -18.391  # MHz
+            self.A_yx = -18.391  # MHz
+            self.A_xz = 0        # MHz
+            self.A_zx = 0        # MHz
+            self.A_yz = 0        # MHz
+            self.A_zy = 0        # MHz
+            self.Q_xx = 0.62     # MHz
+            self.Q_yy = -0.1     # MHz
+            self.Q_zz = -0.52    # MHz
+            self.Q_xy = -0.623   # MHz
+            self.Q_yx = -0.623    # MHz
+            self.Q_xz = 0        # MHz
+            self.Q_zx = 0        # MHz
+            self.Q_yz = 0        # MHz
+            self.Q_zy = 0        # MHz
+            self.g = 3.0766      # MHz/T
+            self.Iz = jmat(1,'z')
+            self.Iy = jmat(1,'y')
+            self.Ix = jmat(1,'x')
+            self.dimension = 3
+
+        elif self.name == 'VB_14N3':
+            self.A_xx = 79.406   # MHz
+            self.A_yy = 58.170   # MHz
+            self.A_zz = 48.159   # MHz
+            self.A_xy = 18.391   # MHz
+            self.A_yx = 18.391   # MHz
+            self.A_xz = 0        # MHz
+            self.A_zx = 0        # MHz
+            self.A_yz = 0        # MHz
+            self.A_zy = 0        # MHz
+            self.Q_xx = 0.62     # MHz
+            self.Q_yy = -0.1     # MHz
+            self.Q_zz = -0.52    # MHz
+            self.Q_xy = 0.623    # MHz
+            self.Q_yx = 0.623    # MHz
+            self.Q_xz = 0        # MHz
+            self.Q_zx = 0        # MHz
+            self.Q_yz = 0        # MHz
+            self.Q_zy = 0        # MHz
+            self.g = 3.0766      # MHz/T
+            self.Iz = jmat(1,'z')
+            self.Iy = jmat(1,'y')
+            self.Ix = jmat(1,'x')
+            self.dimension = 3
+
         elif self.name == 'None':
-            self.A_perpx = 0
-            self.A_perpy = 0
-            self.A_par = 0
-            self.A_XY = 0
-            self.Q = 0
+            self.A_xx = 0      # MHz
+            self.A_yy = 0      # MHz
+            self.A_zz = 0      # MHz
+            self.A_xy = 0      # MHz
+            self.A_yx = 0      # MHz
+            self.A_xz = 0      # MHz
+            self.A_zx = 0      # MHz
+            self.A_yz = 0      # MHz
+            self.A_zy = 0      # MHz
+            self.Q_xx = 0      # MHz
+            self.Q_yy = 0      # MHz
+            self.Q_zz = 0      # MHz
+            self.Q_xy = 0      # MHz
+            self.Q_yx = 0      # MHz
+            self.Q_xz = 0      # MHz
+            self.Q_zx = 0      # MHz
+            self.Q_yz = 0      # MHz
+            self.Q_zy = 0      # MHz
             self.g = 0
             self.Iz = jmat(0,'z')
             self.Iy = jmat(0,'y')
@@ -100,6 +188,7 @@ class electronic:
 
         if self.name == 'electron':
             self.D = 0            # MHz
+            self.E = 0 
             self.g = -28025       # MHz/T
             self.Sz = jmat(1/2,'z')
             self.Sy = jmat(1/2,'y')
@@ -108,6 +197,7 @@ class electronic:
 
         elif self.name == 'NV-':
             self.D = 2878         # MHz
+            self.E = 0 
             self.g = -28025       # MHz/T
             self.Sz = jmat(1,'z')
             self.Sy = jmat(1,'y')
@@ -125,6 +215,7 @@ class electronic:
 
         elif self.name == 'None':
             self.D = 0
+            self.E = 0 
             self.g = 0
             self.Sz = jmat(0,'z')
             self.Sy = jmat(0,'y')

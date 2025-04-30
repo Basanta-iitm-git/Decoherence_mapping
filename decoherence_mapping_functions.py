@@ -55,13 +55,13 @@ def generalized_hamiltonian(electron, nuclei, Bx, By, Bz):
     # Add nuclear terms
     for i, (nuc, (Ix, Iy, Iz)) in enumerate(zip(nuclei, I_list)):
         # Hyperfine interaction
-        H += nuc.A_xx * S[0] * Ix + nuc.A_yy * S[1] * Iy + nuc.A_zz * S[2] * Iz
+        H += nuc.A_xx * S[0] * Ix + nuc.A_yy * S[1] * Iy + nuc.A_zz * S[2] * Iz + nuc.A_xy * S[0] * Iy + nuc.A_yx * S[1] * Ix + nuc.A_xz * S[0] * Iz + nuc.A_zx * S[2] * Ix + nuc.A_yz * S[1] * Iz + nuc.A_zy * S[2] * Iy
         
         # Nuclear Zeeman
         H -= nuc.g * (Ix*Bx + Iy*By + Iz*Bz)
         
         # Quadrupole interaction
-        H += nuc.Q_xx * Ix**2 + nuc.Q_yy * Iy**2 + nuc.Q_zz * Iz**2
+        H += nuc.Q_xx * Ix**2 + nuc.Q_yy * Iy**2 + nuc.Q_zz * Iz**2 + nuc.Q_xy * Ix * Iy + nuc.Q_yx * Iy * Ix + nuc.Q_xz * Ix * Iz + nuc.Q_zx * Iz * Ix + nuc.Q_yz * Iy * Iz + nuc.Q_zy * Iz * Iy
         
     return H
 
