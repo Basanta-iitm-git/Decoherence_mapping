@@ -2,7 +2,7 @@
 
 The repository is based on the work presented in the following manuscript:
 
-[*Identifying optimal magnetic field configurations for decoherence mitigation of boron vacancies in hexagonal boron nitride* - Basanta Mistri, Saksham Mahajan, Felix Donaldson, Rama K. Kamineni, and Siddharth Dhomkar, arXiv:2505.06574] (https://arxiv.org/abs/2505.06574)
+[*Identifying optimal magnetic field configurations for decoherence mitigation of boron vacancies in hexagonal boron nitride* - Basanta Mistri, Saksham Mahajan, Felix Donaldson, Rama K. Kamineni, and Siddharth Dhomkar, arXiv:2505.06574](https://arxiv.org/abs/2505.06574)
 
 ![Figure](https://github.com/Basanta-iitm-git/Decoherence_mapping/blob/main/figure.png?raw=true)
 
